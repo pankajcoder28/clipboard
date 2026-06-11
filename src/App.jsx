@@ -1,11 +1,24 @@
-
+import logo from "./images/logo.svg"
+import computer from "./images/image-computer.png"
+import devices from "./images/image-devices.png"
+import blacklist from "./images/icon-blacklist.svg"
+import icontext from "./images/icon-text.svg"
+import preview from "./images/icon-preview.svg"
+import google from "./images/logo-google.png"
+import hp from "./images/logo-hp.png"
+import ibm from "./images/logo-ibm.png"
+import microsoft from "./images/logo-microsoft.png"
+import vector from "./images/logo-vector-graphics.png"
+import insta from "./images/icon-instagram.svg"
+import twit from "./images/icon-twitter.svg"
+import face from "./images/icon-facebook.svg"
 function App() {
 
   return (
     <section id="hero" >
 
       <div className="section-container mb-40 px-10 pt-16">
-        <img src="src/images/logo.svg" alt="" className="w-50 h-50 mx-auto my-16 rounded-full" />
+        <img src={logo} alt="" className="w-50 h-50 mx-auto my-16 rounded-full" />
 
         <h3>
           A history of everything you copy
@@ -34,7 +47,7 @@ function App() {
         <div className="section-container my-0">
           <div className="relative flex flex-col md:flex-row md:space-x-32">
             <div className="md:w-1/2">
-              <img src="src/images/image-computer.png" alt="" className="md:absolute top-0 right-[50%] " />
+              <img src={computer} alt="" className="md:absolute top-0 right-[50%] " />
             </div>
             <div className="flex flex-col mt-16 mb-24 space-y-12 text-xl md:mb-60 md:text-left md:pl-16">
               <div>
@@ -60,7 +73,7 @@ function App() {
             <p className="max-w-3xl mx-auto mb-10 text-2xl text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis incidunt modi nemo nesciunt veniam molestiae sint corporis perferendis.
             </p>
-            <img src="src/images/image-devices.png" alt="" className="mx-auto" />
+            <img src={devices} alt="" className="mx-auto" />
         </div>
       </section>
 
@@ -71,19 +84,19 @@ function App() {
 
           <div className="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12 ">
             <div className="flex flex-col items-center space-y-5">
-              <img src="src/images/icon-blacklist.svg" alt="" className="mb-6" />
+              <img src={blacklist} alt="" className="mb-6" />
               <h5 className="text-xl font-bold m-3 text-gray-600">Create blacklists</h5>
               <p className="max-w-md text-gray-400">Easily search your snippets by content,category,web address,application , and more.</p>
             </div>
 
              <div className="flex flex-col items-center space-y-5">
-              <img src="src/images/icon-text.svg" alt="" className="mb-6" />
+              <img src={icontext} alt="" className="mb-6" />
               <h5 className="text-xl font-bold m-3 text-gray-600">Plain Text Snippets</h5>
               <p className="max-w-md text-gray-400">Easily search your snippets by content,category,web address,application , and more.</p>
             </div>
 
             <div className="flex flex-col items-center space-y-5">
-              <img src="src/images/icon-preview.svg" alt="" className="mb-6" />
+              <img src={preview} alt="" className="mb-6" />
               <h5 className="text-xl font-bold m-3 text-gray-600">Sneak Preview</h5>
               <p className="max-w-md text-gray-400">Easily search your snippets by content,category,web address,application , and more.</p>
             </div>
@@ -94,11 +107,11 @@ function App() {
 
       <section id="references">
         <div className="flex flex-col items-center justify-between px-10 max-w-6xl mx-auto my-30 space-y-20 md:flex-row md:space-y-0">
-          <img src="src/images/logo-google.png" alt="" />
-          <img src="src/images/logo-hp.png" alt="" />
-          <img src="src/images/logo-ibm.png" alt="" />
-          <img src="src/images/logo-microsoft.png" alt="" />
-          <img src="src/images/logo-vector-graphics.png" alt="" />
+          <img src={google}alt="" />
+          <img src={hp} alt="" />
+          <img src={ibm} alt="" />
+          <img src={microsoft} alt="" />
+          <img src={vector} alt="" />
         </div>
       </section>
       <section id="bottom">
@@ -116,7 +129,7 @@ function App() {
       <footer className="bg-gray-50">
         <div className="section-container p-4">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <img src="src/images/logo.svg" alt="" className="w-18 " />
+            <img src={logo} alt="" className="w-18 " />
             {/*container for menus and social */}
             <div className="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-gray-400">
               {/*menus */}
@@ -137,9 +150,9 @@ function App() {
               </div>
               {/*social */}
               <div className="flex gap-5 ">
-                <a href="#"><img src="src/images/icon-instagram.svg" alt="" className="duration-200 ficon"/></a>
-                <a href="#"> <img src="src/images/icon-twitter.svg" alt="" className="duration-200 ficon"/></a>
-                <a href="#"> <img src="src/images/icon-facebook.svg" alt="" className="duration-200 ficon" /></a>
+                <a href="#"><img src={insta} alt="" className="duration-200 ficon"/></a>
+                <a href="#"> <img src={twit} alt="" className="duration-200 ficon"/></a>
+                <a href="#"> <img src={face} alt="" className="duration-200 ficon" /></a>
               </div>
             </div>
           </div>
